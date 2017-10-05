@@ -22,11 +22,12 @@ function myAlert(){
       li.appendChild(checkBox);*/
 }
 
-  //add item button
+        //add item button
     document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('task').addEventListener('click', myAlert);
 });
 
+        //To remove items from the list that have the corresponding checkboxes checked off
 function removeSelected(){
         var list=document.getElementById("list");
         var x=list.size();
@@ -44,6 +45,7 @@ function removeSelected(){
   document.getElementById('delete').addEventListener('click', removeSelected);
 });
 
+        //To clear the entire list, also removes white space
 function clearList(){
   var list=document.getElementById("list");
   while(list.firstChild){
